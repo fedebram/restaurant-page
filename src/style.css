@@ -1,4 +1,50 @@
-body {
-    background: url('./restaurant.png');
+:root {
+    --yellow: #FFC60B;
+    --green: #85AE85;
+    --light-blue: #0A95FF;
+    --dark-blue: #230AFF;
+    --purple: #7766FF;
+    --lilac: #AAA0FF;
+    --dark-orange: #df880a;
+    --chocolate: #c16a08;
+    --khaki: #ffde73;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('./restaurant.png');
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr 0.5fr;
+}
+
+header {
+    padding-top: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    background-color: var(--khaki);
+    padding-top: 10px;
+    justify-content: center;
+}
+
+button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid black;
+    border-bottom: var(--khaki);
+    background-color: var(--khaki);
+}
+
+button:hover {
+    background-color: var(--dark-orange);
+}
